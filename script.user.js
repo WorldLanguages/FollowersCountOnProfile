@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Scratch followers number enabler
-// @version      1.0
+// @version      1.0.1
 // @description  Followers number on user profiles
 // @author       @World_Languages on Scratch
 // @match        https://scratch.mit.edu/users/*
@@ -28,12 +28,18 @@ if (request != 1.0) {
 
 // Run
 window.onload = function() {
-var following = readCookie('followingshow');
-    if (following == 1) {
-    getFollowing();}
+    getFollowing();
 getFollowers();};
 
 //
+
+
+
+
+
+
+
+
 
 
 
@@ -56,7 +62,6 @@ var html2 = document.documentElement.innerHTML;
 html2 = html2.search("Studios I Curate");
 if (html2 == -1) {
     divtofind = divtofind-1;}
-
 
 
 
@@ -114,47 +119,3 @@ var b = document.getElementsByClassName("box-head");
 b[divtofind-1].innerHTML = a;
     }, 500);}
 //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Cookies function
-function readCookie(name) {
-	var nameEQ = name + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0;i < ca.length;i++) {
-		var c = ca[i];
-		while (c.charAt(0)==' ') c = c.substring(1,c.length);
-		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-	}
-	return null;
-}
