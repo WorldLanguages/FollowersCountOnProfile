@@ -6,4 +6,4 @@ You're done! :D
 
 #Updates:
 
-1.0.2: Made multilingual, count users
+2.0: Multilingual support, super faster profile loading, fixed small bug happening on new profiles.
