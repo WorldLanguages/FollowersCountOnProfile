@@ -6,4 +6,4 @@ You're done! :D
 
 #Updates:
 
-2.0: Multilingual support, super faster profile loading, fixed small bug happening on new profiles.
+2.0: Multilingual support, super faster profile loading, fixed small bug happening on new profiles, now compatible with other userscripts.
