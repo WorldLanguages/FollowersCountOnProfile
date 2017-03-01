@@ -7,26 +7,6 @@
 // @exclude      https://scratch.mit.edu/users/*/*/
 // ==/UserScript==
 
-
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-        var request = xmlhttp.responseText;
-        if (request != "2.0") {
-            var update = confirm('You NEED to update the followers number enabler to make it work. \n\nUpdate? It just takes 10 seconds');
-            if (update === true) {
-                window.location = "https://github.com/WorldLanguages/FollowersNumberEnabler/blob/master/How%20to%20update.md";}
-            if (update === false) {
-                stop();}}}}
-
-xmlhttp.open( "GET", 'https://raw.githubusercontent.com/WorldLanguages/FollowersNumberEnabler/master/currentversion.md', true);
-xmlhttp.send();
-
-
-
-
-
-
 window.addEventListener('load', function () {
     getFollowers();
     getFollowing();
